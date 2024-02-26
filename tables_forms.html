@@ -1,0 +1,123 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables and Forms</title>
+</head>
+<body>
+
+
+    <table border = 1>
+    <!-- table head  = thead  , tabloya başlık-->
+                <!--border attribute u ile excel görünümü yakalayabilirsin-->
+
+        <thead>
+
+            <!--kolon isimleri için  th tagi kullanılır-->
+            <th>Name</th>
+            <th>Salary</th>
+            <th>Department</th>
+            <th>Age</th>
+
+        </thead>
+
+        <!-- table rows  = rows  , tabloya satır-->
+        <tr>
+            <!--table data = td-->
+            <td>James Hetfield</td>
+            <td>100</td>
+            <td>Solist</td>
+            <td>60</td>
+        </tr>
+        <tr>
+            <!--table data = td-->
+            <td>Lars Ulrich</td>
+            <td>200</td>
+            <td>Guitarist</td>
+            <td>66</td>
+        </tr>
+        <tr>
+            <!--table data = td-->
+            <td></td>
+            <td>180</td>
+            <td>Baterist</td>
+            <td>65</td>
+        </tr>
+
+    </table>
+
+    <br><br><br><br>
+    <!--Formlar dersi Başlangıcı-->
+
+    <!--formlar form içinde çeşitli işlemler yapılması için kullanılır.-->
+    
+    <form action="images.html">
+        
+    
+        <label for="name"> Name : </label>
+        <input type="text"  id="name"  name="name">
+    <br>
+        <label for ="salary">Salary   :   </label>
+        <input type="text"  id="salary"name="salary">
+    <br>
+        <input type="submit">  <!--Buton için-->
+    </form>
+
+    <br><br><br><br>
+
+    <form action="example2.html">
+        
+    
+        <label for="Email"> Email : </label>
+        <input type="email"  id="Email"  name="Email" , placeholder="Enter your E-mail">
+    <br>
+        <label for ="Password"> Password:</label>
+        <input type="password"  id="Password"name="Password" placeholder="Enter your Password">
+    <!--email ve password önceden tanımlı olan type lardır , text de öyle-->
+    <br>
+        <input type="submit" value="Login">  <!--Buton için , Value = butonda ne yazsın?-->
+
+        
+    
+    </form>
+
+    <br><br><br><br>
+    <form action="DivandSpanTags.html">
+
+        <p>StaWars vs StarTrek ? </p>
+    
+        <!--Sorunun cevabını seçeneklerle seçtirmek istediğimiz için input type =  radio kullanmalıyız-->
+       
+        <label for="StarWars"> StarWars : </label>
+        <input type="radio"  id="StarWars" name="movie" value = "starwars">
+    <br>
+        <label for ="StarTrek"> StarTrek : </label>
+        <input type="radio"  id="StarTrek" name = "movie" value="startrek"> <!--iki name e de aynı ismi verirsek sadece 1 tanesi seçilebilir aynı anda.-->
+    <br>
+        <input type="submit" value="Choose">  <!--Buton için , Value = butonda ne yazsın?-->
+    
+    
+    </form>
+    <br><br><br><br>
+
+    <form action = "images.html">
+
+
+        <label for="Rating">Seçtiğin Filmi Puanla : </label>
+        <select id="Rating" name = "Rating">
+            <option>5</option>
+            <option>4</option>
+            <option>3</option>
+            <option>2</option>
+            <option>1</option>
+            <option>0</option>
+        </select>
+    <br>
+    <input type="submit" value="Puanla">
+
+    </form>
+
+
+
+</body>
+</html>
